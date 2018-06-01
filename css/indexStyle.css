@@ -1,0 +1,279 @@
+body {
+    background-color: #f8f8f8;
+}
+.layout {
+    width: 100%;
+    height: 100%;
+    /*max-width: 6.4rem;*/
+    min-width: 360px;
+}
+/*顶部*/
+.headertop {
+    width: 100%;
+    height: 0.35rem;
+    padding-top: 0.05rem;
+    padding-left: 0.1rem;
+    position: relative;
+}
+.weather {
+    height: 100%;
+    color: #999;
+}
+.weather span {
+    display: block;
+    height: 100%;
+    line-height: 0.3rem;
+    float: left;
+    height: 100%;
+    font-size: 0.2rem;
+}
+.weather span i {
+    font-style: normal;
+    font-size: 0.16rem;
+}
+.weather span p {
+    font-size: 0.08rem;
+}
+/*你拍花我送花*/
+.graded {
+    width: 0.2rem;
+    height: 0.2rem;
+    text-align: center;
+    line-height: 0.2rem;
+    border: 1px solid #b5b5b5;
+    border-radius: 40%;
+    color: #b5b5b5;
+    position: absolute;
+    right: 0.12rem;
+    top: 0.1rem;
+}
+.dialogbox {
+    position: absolute;
+    height: 0.2rem;
+    width: 0.68rem;
+    background-color: #fff;
+    box-shadow: 4px 4px 5px #ccc;
+    font-size: 0.08rem;
+    text-align: center;
+    line-height: 0.2rem;
+    left: -0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*三角形*/
+.trigon {
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+    position: absolute;
+    right: -0.115rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*<!--顶部完毕-->*/
+/*<!--logo开始-->*/
+.logobox {
+    width: 100%;
+    height: 0.64rem;
+    background: transparent url("../img/logo.png") no-repeat center center;
+    background-size: 1.4rem 0.45rem;
+}
+/*搜索框*/
+.searchbox {
+    width: 100%;
+    height: 0.4rem;
+    padding: 0 12px;
+}
+.search {
+    width: 100%;
+    height: 0.4rem;
+    position: relative;
+    border: 1px solid #c8c8c8;
+    background-color: #fff;
+}
+.search input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.40rem;
+    /*获取焦点后盒子变大*/
+    /*width: 2.08rem;*/
+    /*background-color: #fff;*/
+    z-index: 111;
+    height: 100%;
+    border: 0;
+    /*border: 1px solid #828282;*/
+    border-right: 0;
+    font-size: 0.14rem;
+    padding-left: 0.02rem;
+    box-sizing: border-box;
+}
+.search input:focus {
+    transition: all 0.3s linear;
+    width: 2.08rem;
+    background-color: #fff;
+}
+.searchright {
+    float: right;
+    width: 46%;
+    height: 100%;
+    line-height: 0.4rem;
+}
+.searchright span {
+    float: left;
+    height: 0.15rem;
+    line-height: 0.15rem;
+    padding: 0 0.08rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+}
+.searchright span:first-of-type {
+    border-right: 1px solid #ccc;
+}
+.searchbtn {
+    float: right;
+    height: 100%;
+    width: 50%;
+    font-size: 0.1rem;
+    text-align: center;
+    color: #3388FF;
+    border-left: 1px solid #ccc;
+    font-weight: bold;
+}
+/*导航*/
+.nav {
+    margin-top: 0.14rem;
+    height: 0.62rem;
+}
+.navstyle {
+    border: 0;
+    background-color: transparent;
+}
+.navstyle ul:first-of-type {
+    width: 100%;
+}
+.navstyle ul:first-of-type li {
+    width: 16.66%;
+    float: left;
+    color: #999;
+    font-size: 0.17rem;
+    text-align: center;
+}
+.navstyle ul:first-of-type li span {
+    font-size: 0.1rem;
+}
+.navstyle ul:nth-of-type(2) {
+    display: block;
+    width: 0.17rem;
+    height: 0.07rem;
+    position: relative;
+    left: 50%;
+    top: 0.12rem;
+    transform: translateX(-50%);
+}
+.navstyle ul:nth-of-type(2) li {
+    float: left;
+    width: 0.03rem;
+    height: 0.03rem;
+    background-color: #e2e2e2;
+    border-radius: 50%;
+    margin-left: 0.02rem;
+}
+.navstyle ul:nth-of-type(2) .select {
+    background-color: #999;
+}
+/*新闻列表开始*/
+.newList {
+    width: 100%;
+    padding: 0 0.12rem;
+    background-color: #fff;
+}
+.newcontent {
+    width: 100%;
+    padding-top: 0.08rem;
+}
+.newcontent h3 {
+    font-size: 0.14rem;
+    margin: 0;
+    font-weight: normal;
+    margin-top: 0.12rem;
+}
+.newList h3:first-of-type {
+    margin-top: 0rem;
+}
+.newcontent li span {
+    font-size: 0.09rem;
+    top: 0.1rem;
+    color: #999;
+}
+.newcontent ul:first-of-type {
+    display: block;
+    width: 100%;
+    height: 0.58rem;
+    margin-top: 0.08rem;
+}
+.newcontent ul:first-of-type li {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    position: relative;
+}
+/*一张图情况*/
+.newcontent ul:first-of-type .oldnew {
+    width: 100%;
+    height: 1.5rem;
+}
+/*图文情况*/
+.newcontent ul:first-of-type .oldnewtxt {
+    width: 66.66%;
+    padding-left: 0.1rem;
+    box-sizing: border-box;
+}
+.newcontent ul:first-of-type li img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.newcontent p {
+    position: relative;
+    top: 0.1rem;
+    font-size: 0.09rem;
+    color: #999;
+    padding-bottom: 0.08rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0.08rem;
+}
+/*底部*/
+.foot {
+    width: 100%;
+    height: 0.9rem;
+    text-align: center;
+    font-size: 0.10rem;
+    color: #999;
+}
+.foot h5 {
+    display: inline-block;
+    font-size: 0.12rem;
+    margin: 0.15rem 0;
+    font-weight: 100;
+}
+.foot p {
+    line-height: 0.18rem;
+}
+.foot p i {
+    display: inline-block;
+    width: 0.1rem;
+    height: 0.11rem;
+    font-style: normal;
+    position: relative;
+}
+.foot p i img {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.11rem;
+    left: -4px;
+    top: 3px;
+}
